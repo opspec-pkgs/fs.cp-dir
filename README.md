@@ -29,7 +29,7 @@ op:
   pkg: { ref: github.com/opspec-pkgs/fs.cp-dir#1.0.0 }
   inputs:
     sourceDir:
-  ouputs:
+  outputs:
     resultDir:
 ```
 
