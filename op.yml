@@ -23,7 +23,7 @@ outputs:
 version: 2.0.0
 run:
   container:
-    cmd: [ ncp, /src '/dst/$(dstPath)']
+    cmd: [ node, /cmd.js ]
     dirs:
       /src: $(src)
       /dst: $(dst)
