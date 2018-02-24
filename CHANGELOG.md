@@ -5,4 +5,10 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[1.0.0] - 2018-02-23
+
+### Changed
+- renamed input/output params for clarity
+- added dst as input
+
 ## \[1.0.0] - 2017-12-30
