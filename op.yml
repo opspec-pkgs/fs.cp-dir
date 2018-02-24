@@ -7,6 +7,15 @@ inputs:
   dst:
     dir:
       description: destination directory
+  dstPath:
+    string:
+      description: destination directory path at which content will be placed (will be created if doesn't exist)
+      default: /
+  overwrite:
+    string:
+      description: overwrite files/dirs if they already exist
+      constraints: { enum: ['true', 'false']}
+      default: 'false'
 outputs:
   dst:
     dir:
@@ -14,8 +23,13 @@ outputs:
 version: 2.0.0
 run:
   container:
-    cmd: [ sh, -ce, cp -r /src /dst]
-    dirs: 
+    cmd: [ ncp, /src '/dst/$(dstPath)']
+    dirs:
       /src: $(src)
       /dst: $(dst)
-    image: { ref: 'alpine:3.6' }
+    envVars:
+      overwrite:
+      dstPath:
+    files:
+      /cmd.js:
+    image: { ref: 'opspecpkgs/fs.cp-dir:2.0.0' }

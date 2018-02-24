@@ -30,6 +30,10 @@ op:
   inputs:
     dst:
     src:
+    # begin optional params
+    dstPath:
+    overwrite:
+    # end optional params
   outputs:
     dst:
 ```
