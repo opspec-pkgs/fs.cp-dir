@@ -5,7 +5,11 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
-## \[1.0.0] - 2018-02-24
+## \[2.0.0] - 2018-02-24
+
+### Added
+
+- opspec 0.1.6 compatibility
 
 ### Changed
 - renamed input/output params for clarity
