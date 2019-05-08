@@ -29,7 +29,9 @@ op:
   ref: github.com/opspec-pkgs/fs.cp-dir#2.0.0
   inputs:
     dst:
+    groupId:
     src:
+    userId:
     # params w/ default
     dstPath:
     overwrite:

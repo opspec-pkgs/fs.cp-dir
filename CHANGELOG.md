@@ -5,6 +5,12 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[2.0.1] - 2019-05-07
+
+### Added
+
+- ability to specify userId &/or groupId of copied content
+
 ## \[2.0.0] - 2018-02-24
 
 ### Added

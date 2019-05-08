@@ -16,6 +16,18 @@ inputs:
       description: overwrite files/dirs if they already exist
       constraints: { enum: ['true', 'false']}
       default: 'false'
+  userId:
+    number:
+      constraints:
+        format: integer
+      default: 0
+      description: user id of copied content
+  groupId:
+    number:
+      constraints:
+        format: integer
+      default: 0
+      description: group id of copied content
 outputs:
   dst:
     dir:
@@ -28,8 +40,10 @@ run:
       /src: $(src)
       /dst: $(dst)
     envVars:
-      overwrite:
       dstPath:
+      groupId:
+      overwrite:
+      userId:
     files:
       /cmd.js:
-    image: { ref: 'opspecpkgs/fs.cp-dir:2.0.0' }
+    image: { ref: 'opspecpkgs/fs.cp-dir:2.0.1' }
