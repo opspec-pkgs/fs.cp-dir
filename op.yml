@@ -35,15 +35,14 @@ outputs:
 version: 2.0.1
 run:
   container:
-    cmd: [ node, /cmd.js ]
+    cmd: [ /cmd.sh ]
     dirs:
       /src: $(src)
       /dst: $(dst)
     envVars:
+      chown: $(userId):$(groupId)
       dstPath:
-      groupId:
       overwrite:
-      userId:
     files:
-      /cmd.js:
+      /cmd.sh:
     image: { ref: 'opspecpkgs/fs.cp-dir:2.0.1' }

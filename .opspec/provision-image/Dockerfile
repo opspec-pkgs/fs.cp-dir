@@ -1,2 +1,2 @@
-FROM node:9.5.0-alpine
-RUN yarn add fs-extra
+FROM alpine:3.9
+RUN apk add --no-cache rsync
