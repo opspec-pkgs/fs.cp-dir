@@ -32,7 +32,7 @@ outputs:
   dst:
     dir:
       description: result directory containing copied data
-version: 2.0.1
+version: 2.0.2
 run:
   container:
     cmd: [ /cmd.sh ]
@@ -45,4 +45,4 @@ run:
       overwrite:
     files:
       /cmd.sh:
-    image: { ref: 'opspecpkgs/fs.cp-dir:2.0.1' }
+    image: { ref: 'opspecpkgs/fs.cp-dir:2.0.2' }

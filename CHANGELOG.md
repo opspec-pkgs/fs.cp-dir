@@ -5,6 +5,12 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[2.0.2] - 2019-09-18
+
+### Fixed
+
+- Error on directory w/ no child directories
+
 ## \[2.0.1] - 2019-05-07
 
 ### Added
