@@ -13,20 +13,20 @@ the op uses [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgre
 ## Install
 
 ```shell
-opctl op install github.com/opspec-pkgs/fs.cp-dir#2.0.1
+opctl op install github.com/opspec-pkgs/fs.cp-dir#2.0.2
 ```
 
 ## Run
 
 ```
-opctl run github.com/opspec-pkgs/fs.cp-dir#2.0.1
+opctl run github.com/opspec-pkgs/fs.cp-dir#2.0.2
 ```
 
 ## Compose
 
 ```yaml
 op:
-  ref: github.com/opspec-pkgs/fs.cp-dir#2.0.1
+  ref: github.com/opspec-pkgs/fs.cp-dir#2.0.2
   inputs:
     dst:
     groupId:
