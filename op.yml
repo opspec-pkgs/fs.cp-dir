@@ -12,10 +12,9 @@ inputs:
       description: destination directory path at which content will be placed (will be created if doesn't exist)
       default: /
   overwrite:
-    string:
+    boolean:
       description: overwrite files/dirs if they already exist
-      constraints: { enum: ['true', 'false']}
-      default: 'false'
+      default: false
   userId:
     number:
       constraints:
@@ -32,7 +31,7 @@ outputs:
   dst:
     dir:
       description: result directory containing copied data
-version: 2.0.2
+version: 2.0.3
 run:
   container:
     cmd: [ /cmd.sh ]
@@ -45,4 +44,4 @@ run:
       overwrite:
     files:
       /cmd.sh:
-    image: { ref: 'opspecpkgs/fs.cp-dir:2.0.2' }
+    image: { ref: 'ubuntu:18.04' }
